@@ -1,0 +1,11 @@
+Labbdags, bygg en minimal javac…
+
+Usage: java com.folkol.compiler.Javac Addition.java
+
+->
+
+Addition.class
+
+->
+
+Should define an add method which adds the two parameters and returns the result. Confirm this by testing.

@@ -1,0 +1,15 @@
+Litteratur / läs på
+===================
+
+* Syntax Equations (Backus-Naur Form)
+
+* Lexical scanning, finite automata
+
+* Parsing theory
+
+* Intermediate languages (P-code, reverse Polish representation)
+
+	* P-code, Portable-code, code for a hypothetical CPU like JVM!
+	* Polish representation, aka prefix notation. Reverse polish notation is postfix operands
+
+* Subroutines, argument passing
