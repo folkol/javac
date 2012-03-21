@@ -1,6 +1,21 @@
 Labbdags, bygg en minimal javac…
 
-Usage: java com.folkol.compiler.Javac Addition.java
+Usage: java MyCompiler Addition.java
+
+public class MyCompiler {
+    public static void main(String[] args) {
+        try {
+            FileOutputStream fos = new FileOutputStream(args[0].replace(".java", ".class"));
+            byte[] compiledClass = com.folkol.compiler.Javac.compile(args[0]);
+            fos.write(compiledClass);
+            fos.close();
+        } catch (FileNotFoundException ex) {
+            System.out.println("FileNotFoundException : " + ex);
+        } catch (IOException ioe) {
+            System.out.println("IOException : " + ioe);
+        }
+    }
+}
 
 ->
 
@@ -9,3 +24,9 @@ Addition.class
 ->
 
 Should define an add method which adds the two parameters and returns the result. Confirm this by testing.
+
+class MyCalculator {
+    public static void main(String[] args) {
+        System.out.println("Ans: " + Addition.add(Integer.parseInt(args[0]), Integer.parseInt(args[0]));
+    }
+}

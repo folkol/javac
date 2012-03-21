@@ -13,3 +13,35 @@ Litteratur / läs på
 	* Polish representation, aka prefix notation. Reverse polish notation is postfix operands
 
 * Subroutines, argument passing
+
+* Instruction set
+	* http://en.wikipedia.org/wiki/Java_bytecode_instruction_listings
+
+* JVM Stacks and Heap
+
+	* Stack: Program counter, byte sized operands and byte sized instructions?
+	* Heap
+	* Threads? Scheduling?
+
+* GC? Na.. :P
+
+* Classfile file format
+
+	* Magic Number
+	* Constant table
+	* List of Fields??
+	* List of Methods?? (Signatures?)
+	* Method code
+
+* Java grammar
+
+
+* Optimization
+
+
+
+
+Approach:
+
+Top-down, recursive descent parsing. Fail fast.
+No error recovery. Subsset of Java.
